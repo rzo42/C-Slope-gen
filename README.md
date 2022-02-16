@@ -1,4 +1,4 @@
-# C-Slope-gen
+# C++-Slope-gen
 C++ slope generator
 
 SLOPE CLASS DEMO
