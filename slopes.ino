@@ -139,28 +139,24 @@ void loop() {
  //execute attack phase
  for (double y=0;y<=_att;y++){    
   _output=attack.Lin(y);
-    analogWrite(9,_output);
     Serial.println(_output);
  }
 
  //execute decay phase
 for (double y=0;y<=_dec;y++){
   _output=decay.RevLin(y);
-    analogWrite(9,_output);
     Serial.println(_output);
  }
 
  //execute sustain phase
 for (double y=0;y<=_hold;y++){
   _output=_sus;
-    analogWrite(9,_output);
     Serial.println(_output);
  }
 
  //execute release phase
 for (double y=0;y<=_rel;y++){
   _output=release_.RevLin(y);
-    analogWrite(9,_output);
     Serial.println(_output);
  }
 int u=0;
